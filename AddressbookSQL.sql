@@ -28,3 +28,6 @@ UPDATE Address_Books SET first_name = 'ak' , last_name = 'kumar', Email_Id = 'ku
 --uc5
 delete from Address_Books where City = 'jjj';
 select * from Address_Books;
+--uc6
+select * from Address_Books where City='jjj';
+
