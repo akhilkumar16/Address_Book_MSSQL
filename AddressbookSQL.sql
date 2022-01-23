@@ -32,3 +32,7 @@ select * from Address_Books;
 select * from Address_Books where City='jjj';
 --uc7
 select count(City) as TotalContact from Address_Books; 
+--uc8
+select * from Address_Books where State='ts' order by (first_name);
+select * from Address_Books;
+
