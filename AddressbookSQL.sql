@@ -30,4 +30,5 @@ delete from Address_Books where City = 'jjj';
 select * from Address_Books;
 --uc6
 select * from Address_Books where City='jjj';
-
+--uc7
+select count(City) as TotalContact from Address_Books; 
