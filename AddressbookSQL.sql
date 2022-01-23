@@ -23,3 +23,5 @@ insert into Address_Books values('g','h','er','jjj','jk',31093,564895,'kkkkk@gma
 insert into Address_Books values('Kt','tyr','dfrt ','gggg','ts',25832,4586952,'llll@gmail.com');
 select * from Address_Books;
 
+--uc4
+UPDATE Address_Books SET first_name = 'ak' , last_name = 'kumar', Email_Id = 'kumar@gmail.com' where first_name = 'Ak';
