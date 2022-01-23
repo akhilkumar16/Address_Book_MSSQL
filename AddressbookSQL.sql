@@ -25,3 +25,6 @@ select * from Address_Books;
 
 --uc4
 UPDATE Address_Books SET first_name = 'ak' , last_name = 'kumar', Email_Id = 'kumar@gmail.com' where first_name = 'Ak';
+--uc5
+delete from Address_Books where City = 'jjj';
+select * from Address_Books;
