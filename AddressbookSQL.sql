@@ -13,3 +13,13 @@ Phone_No int,
 Email_Id varchar(255)
 );
 select * from Address_Books;
+--uc3
+insert into Address_Books values('a','b','c','ddd','ts',5060,123456,'abcd@gmail.com');
+
+insert into Address_Books values('d','b','g','hhh','ap',92300,321546,'gdhdggmail.com');
+
+insert into Address_Books values('g','h','er','jjj','jk',31093,564895,'kkkkk@gmail.com');
+
+insert into Address_Books values('Kt','tyr','dfrt ','gggg','ts',25832,4586952,'llll@gmail.com');
+select * from Address_Books;
+
