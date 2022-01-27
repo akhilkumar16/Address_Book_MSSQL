@@ -49,3 +49,7 @@ select * from Address_Books;
 
 update Address_Books set Type ='Family' where first_Name='WARNER' or first_Name='SRH'; 
 select * from Address_Books;
+--uc10
+select count(Type) from Address_Books;
+
+select Type, count(*) as TypeCount from Address_BookS group by Type;
