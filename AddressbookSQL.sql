@@ -1,3 +1,4 @@
+
 --uc1
 create database Address_Book_Service;
 --uc2
@@ -35,4 +36,16 @@ select count(City) as TotalContact from Address_Books;
 --uc8
 select * from Address_Books where State='ts' order by (first_name);
 select * from Address_Books;
+----UC9:- Ability to identify each Address Book with name and Type.
+--UC9.1:- Alter Address Book to add name and type.
+alter table Address_BookS add Name varchar(255),Type varchar(255);
+select * from Address_Books;
 
+--UC9.2:- Here the type could Family, Friends, Profession, etc.
+update Address_Books set name='akhil';
+
+update Address_Books set Type ='Friend' where first_Name='VK' or first_Name='RC';
+select * from Address_Books;
+
+update Address_Books set Type ='Family' where first_Name='WARNER' or first_Name='SRH'; 
+select * from Address_Books;
