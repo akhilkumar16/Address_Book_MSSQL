@@ -53,3 +53,8 @@ select * from Address_Books;
 select count(Type) from Address_Books;
 
 select Type, count(*) as TypeCount from Address_BookS group by Type;
+--uc11
+insert into Address_Books(first_Name,last_Name,address,city,state,ZipCode,Phone_No,Email_Id,name,Type) values('abcdfg','gfdcba','hgfh','hnk','ts','50601','12546','abcdefg@gmail.com','abc','Family');
+ 
+insert into Address_Books values('qwerty','keypad','lkjh','hnk','ts','506012','98745661','qwerty@gmail.com','qwertyContact','Friend');
+select * from Address_Books;
