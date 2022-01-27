@@ -58,3 +58,20 @@ insert into Address_Books(first_Name,last_Name,address,city,state,ZipCode,Phone_
  
 insert into Address_Books values('qwerty','keypad','lkjh','hnk','ts','506012','98745661','qwerty@gmail.com','qwertyContact','Friend');
 select * from Address_Books;
+--Er diagram
+Create table Address(Address_id int not null identity(1,1) primary key,City varchar(20) not null,
+State varchar(255) not null,ZipCode varchar(255) not null default '123456');
+select * from Address;
+--insert value  into Addresses table
+insert into Address(City,State) values('wgl','ts');
+insert into Address(City,State) values('hnk','ts');
+insert into Address(City,State) values('hyd','ts');
+select * from Address;
+
+--Create table ContactDetails
+create table Contact_Details(First_Name varchar(50) not null,Last_Name varchar(50) not null,Address varchar(50) not null, Contact_id int not null identity(1,1)
+foreign key references Address(Address_id),Phone_No varchar(10) not null, Email_Id varchar(50) not null,Primary key(First_Name,Last_Name));
+select * from Contact_Details;
+--insert value  ContactDetails table
+insert into Contact_Details(Contact_id,First_Name,Last_Name,Address,Phone_No,Email_Id)values('1','ch','kumar','wgl','1456982','cricket@gmail.com');
+select * from Contact_Details;
